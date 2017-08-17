@@ -15,6 +15,7 @@ main = (+) @@ "Sum two arguments" // print     --  <--- our IO action on the res
 --                           |->> description for  --help command
 ```
 Console:
+```bash
 [Liftconsole l devic 10039]$ add.hs 5 6
 11
 [Liftconsole l devic 10042]$ add.hs
@@ -23,3 +24,4 @@ Sum two arguments
 [Liftconsole l devic 10047]$ add.hs --help
 Not enough arguments, need two arguments.
 Sum two arguments
+```
