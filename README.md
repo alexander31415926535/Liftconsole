@@ -4,7 +4,9 @@ This library attemts to provide a quickest way to introduce new command to your 
 
 Developed for personal use, hopefully useful to outside world.
 
-Example, file add.hs : 
+Library has two modules Liftconsole and Interactive.
+
+Example of using Liftconsole module, file add.hs : 
 ```haskell
 #!/usr/local/bin/runghc 
 
