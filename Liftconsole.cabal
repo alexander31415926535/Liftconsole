@@ -1,0 +1,29 @@
+name:                Liftconsole
+version:             0.1.0.0
+synopsis:            Lifting pure functions to console.
+description:         Define a pure function and use it as a console command, possibly performing IO actions on its results.
+                     This library attemts to provide a quickest way to introduce new command to your console world.
+                     Developed for personal use, hopefully useful to outside world.
+license:             BSD3
+license-file:        LICENSE
+author:              alexander31415926535
+maintainer:          alex@thebest
+-- copyright:           Alex
+category:            System
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+extra-source-files:  add.hs
+extra-source-files:  math-tutor1.hs
+extra-source-files:  math-tutor2.hs
+extra-source-files:  math-tutor3.hs
+extra-source-files:  math-tutor4.hs
+extra-source-files:  math-tutor5.hs
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Liftconsole, Interactive
+  other-extensions:    FlexibleInstances, MultiWayIf, LambdaCase, DuplicateRecordFields, OverloadedStrings
+  build-depends:       base >=4.10 && <4.11
+                     , Turtle >= 1.3.6 < 1.4.0
+                     , ansi-terminal >= 0.6.3.1 < 0.7
+  default-language:    Haskell2010
