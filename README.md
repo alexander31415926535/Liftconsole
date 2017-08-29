@@ -13,10 +13,12 @@ Example of using Liftconsole module, file add.hs :
 import Liftconsole
 
 main = (+) @@ "Sum two arguments" // print     --  <--- our IO action on the result of (+) function.
---      ^ our pure function  |
---                           |->> description for  --help command
+
+--      ^ our pure function  ^ description for  --help command
+
 -- @@ constructs a Function datatype value (record of function plus its description) for two argument functions
--- // lifts function to console and feeds its output to IO action
+
+-- // lifts function to console and feeds its output to a -> IO () action
 
 ```
 Console:
